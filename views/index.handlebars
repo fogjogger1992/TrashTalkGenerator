@@ -1,0 +1,58 @@
+<!--  ./views/index.handlebars -->
+<div class="container p-5">
+  <div class="col-12 my-5">
+    <h1 class="text-center">Who do you want to talk to?</h1>
+  </div>
+  <div class="row">
+    <!-- form -->
+    <form action="/{{!--target--}}/{{!--task--}}/{{!--phrase--}}" method="POST">
+      <!-- options -->
+      <div class="d-flex justify-content-center">
+        <!-- card: developer -->
+        <div class="card col-4 mx-2 p-3" style="max-width: 20rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="developer" style="height: 18rem; object-fit: cover;">
+          <div class="card-body text-center">
+            <div class="form-check form-check-inline" style="font-size: 1.5em;">
+              <input class="form-check-input" type="radio" name="target" id="developer" value="developer">
+              <label class="form-check-label" for="developer">Developer</label>
+            </div>
+          </div>
+        </div>
+        <!-- card: designer -->
+        <div class="card col-4 mx-2 p-3" style="max-width: 20rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="designer" style="height: 18rem; object-fit: cover;">
+          <div class="card-body text-center">
+            <div class="form-check form-check-inline" style="font-size: 1.5em;">
+              <input class="form-check-input" type="radio" name="target" id="designer" value="designer">
+              <label class="form-check-label" for="designer">Designer</label>
+            </div>
+          </div>
+        </div>
+        <!-- card: founder -->
+        <div class="card col-4 mx-2 p-3" style="max-width: 20rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="founder" style="height: 18rem; object-fit: cover;">
+          <div class="card-body text-center">
+            <div class="form-check form-check-inline" style="font-size: 1.5em;">
+              <input class="form-check-input" type="radio" name="target" id="founder" value="founder">
+              <label class="form-check-label" for="founder">Founder</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- trash talk -->
+      <div class="row my-5 mx-2">
+        <div class="col-md-2">
+          <button class="btn btn-danger" type="submit" style="font-size: 1.5em;">Grenerate</button>
+        </div>
+        <div class="col-md-10">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+            {{!--TrashTalk--}}
+          </textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
