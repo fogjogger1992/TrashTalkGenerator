@@ -7,7 +7,7 @@ Choose a target and click on the button to generate a trash talk
 # Installation
 1. Clone repository to your computer
 ```
-git clone hhttps://github.com/fogjogger1992/TrashTalkGenerator.git
+git clone https://github.com/fogjogger1992/TrashTalkGenerator.git
 ```
 2. CD to project folder
 ```
